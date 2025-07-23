@@ -1,15 +1,9 @@
+import 'package:Docdoc/core/routing/app_router.dart';
+import 'package:Docdoc/doc_app.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(StoreApp());
+  runApp(DocApp(appRouter: AppRouter()));
 }
 
 
-class StoreApp extends StatelessWidget {
-  const StoreApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
