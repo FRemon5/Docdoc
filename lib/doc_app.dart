@@ -1,5 +1,6 @@
-import 'package:Docdoc/core/routing/app_router.dart';
-import 'package:Docdoc/core/theming/colors.dart';
+import 'package:docdoc/core/routing/app_router.dart';
+import 'package:docdoc/core/routing/routes.dart';
+import 'package:docdoc/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,9 +16,10 @@ class DocApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
+          
           title: 'Docdoc',
           theme: ThemeData(primaryColor: ColorManager.mainColor),
-          initialRoute: appRouter.onboardingRoute,
+          initialRoute: Routes.onBoardingScreen,
           debugShowCheckedModeBanner: false,
           onGenerateRoute: appRouter.onGenerateRoute,
         );
