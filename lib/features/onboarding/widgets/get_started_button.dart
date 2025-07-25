@@ -13,11 +13,11 @@ class GetStartedButton extends StatelessWidget {
     return TextButton(
       style: ButtonStyle(
         // ignore: deprecated_member_use
-        backgroundColor: MaterialStateProperty.all<Color>(
+        backgroundColor: WidgetStateProperty.all<Color>(
           ColorManager.mainColor,
         ),
         // ignore: deprecated_member_use
-        minimumSize: MaterialStateProperty.all<Size>(
+        minimumSize: WidgetStateProperty.all<Size>(
           Size(double.infinity, 52.h),
         ),
         tapTargetSize: MaterialTapTargetSize.shrinkWrap,
